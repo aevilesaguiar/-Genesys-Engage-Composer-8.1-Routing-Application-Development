@@ -389,3 +389,21 @@ Uma máquina de estado pode ter:
 
 - Ações que “fazem” algo
 
+![image](https://user-images.githubusercontent.com/52088444/160665954-5a3b600c-6929-41e8-87b0-15db074f3c9a.png)
+
+SCXML is an XML-based state machine language that can be used in many ways. State machines are one of the classic constructions of computer science. They express how a computer goes from one State to another according to basic rules in order to accomplish a task.
+
+Once an SCXML engine has been initialized, the state machine progresses based on the events that are fired on it. When an event is fired, if the current set of states has transitions waiting for that event, and the condition on one of those transitions is satisfied, the state machine is said to “follow” that transition, which may possibly yield a new set of current states. Most state machines will ultimately reach a “final” state, wherein the state machine has said to have executed to completion.
+
+SCXML é uma linguagem de máquina de estado baseada em XML que pode ser usada de várias maneiras. As máquinas de estado são uma das construções clássicas da ciência da computação. Eles expressam como um computador vai de um estado para outro de acordo com regras básicas para realizar uma tarefa.
+
+Depois que um mecanismo SCXML é inicializado, a máquina de estado avança com base nos eventos que são acionados nela. Quando um evento é disparado, se o conjunto atual de estados tem transições esperando por aquele evento, e a condição em uma dessas transições é satisfeita, diz-se que a máquina de estados “segue” aquela transição, o que pode possivelmente produzir um novo conjunto de estados atuais. A maioria das máquinas de estado acabará por atingir um estado “final”, em que a máquina de estado disse ter executado até a conclusão.
+
+Actions are SCXML elements that “do” something. Actions can be used where “executable content” is permissible.
+
+In the example of the traffic light, you can see a definition of a state machine that models the light. It consists of three states—green, yellow, and red. How does it work? In the traffic light (state machine), a timer expires (event) for the green light (state), and then the action is to transition to the yellow light (state).
+
+Ações são elementos SCXML que “fazem” algo. As ações podem ser usadas onde “conteúdo executável” é permitido.
+
+No exemplo do semáforo, você pode ver uma definição de uma máquina de estado que modela o semáforo. Consiste em três estados - verde, amarelo e vermelho. Como funciona? No semáforo (máquina de estado), um temporizador expira (evento) para a luz verde (estado), e então a ação é a transição para a luz amarela (estado).
+
